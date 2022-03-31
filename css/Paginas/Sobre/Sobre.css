@@ -1,0 +1,188 @@
+.divInicial{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.imgInicial{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+.txLogoUm{
+    position: fixed;
+    left: 5%;
+    top: -10%;
+    font-family: Oranienbaum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 148px;
+    color: #FFFFFF;
+    text-shadow: -15px 20px 20px rgba(41, 38, 38, 0.38);
+}
+.txLogoDois{
+    position: fixed;
+    left: 5%;
+    top: 2%;
+    font-family: Oranienbaum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 67px;
+    color: #FFFFFF;
+    text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.29);
+}
+.imgLogo{
+    position: fixed;
+    top: 3.5%;
+    left: 12%;
+    width: 2%;
+    height: 4%;
+    border-radius: 10pc;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+.btFotos{
+    position: fixed;
+    top: 5%;
+    left: 39.5%;
+    width: 3%;
+    height: 6%;
+    border-radius: 10pc;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+.btSobre{
+    position: fixed;
+    top: 5%;
+    left: 44.5%;
+    width: 3%;
+    height: 6%;
+    border-radius: 10pc;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+.btServicos{
+    position: fixed;
+    top: 5%;
+    left: 49.5%;
+    width: 3%;
+    height: 6%;
+    border-radius: 10pc;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+.btAgendamento{
+    position: fixed;
+    top: 5%;
+    left: 54%;
+    width: 3%;
+    height: 6%;
+    border-radius: 10pc;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+
+
+
+.divMeioTela{
+    position: fixed;
+    top: 15%;
+    left: 25%;
+    height: 80%;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.966);
+    border-radius: 30px;
+}
+.divTituloMeioTela{
+    position: relative;
+    left: 0%;
+    top: -4.7%;
+    width: 100%;
+    height: 15%;
+    background-color: rgba(223, 56, 56, 0.81);
+    border-radius: 30px;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+.txTitulo{
+    position: relative;
+    left: 45%;
+    top: 40%;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: #FFFFFF;
+
+}
+
+.divInterna{
+    position: relative;
+    width: 85%;
+    height: 65%;
+    left: 5%;
+    top: 1%;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.04);
+    border-radius: 5px;
+}
+.rollDivMeio{
+    position: relative;
+    top: 5%;
+    left: 104%;
+    height: 90%;
+    width: 1%;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.btRollDivMeio{
+    position: relative;
+    top: 5%;
+    left: -50%;
+    height: 10%;
+    width: 200%;
+    border-radius: 5px;
+    background-color: rgba(90, 90, 90, 0.33);
+}
+.btRollDivMeio:hover{
+    background-color: rgba(46, 46, 46, 0.33);
+}
+
+
+.btVoltar{
+    position: relative;
+    height: 7%;
+    width: 20%;
+    top: 19.1%;
+    left: 42%;
+    border-radius: 25px;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    background-color: rgba(223, 56, 56, 0.81);
+    cursor: pointer;
+}
+.txBtVoltar{
+    position: relative;
+    left: 34%;
+    top: 30%;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+}

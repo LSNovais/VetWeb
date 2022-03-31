@@ -1,0 +1,337 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+    <link rel="stylesheet" href="../css/Paginas/Fotos/Fotos.css" Type="text/css">
+    <link rel="stylesheet" href="../css/Paginas/Fixados/BotoesFixados.css" Type="text/css">
+    <link rel="stylesheet" href="../css/PopUp/PopUpInformacao.css" Type="text/css">
+
+
+    <link rel="icon" href="../img/logoPataCachorro.jpg" type="image/icon type">
+
+
+
+
+    <title>PetShop - Fotos</title>
+
+    <script>
+        var app = angular.module('PetShopServico',[]);
+        
+        app.controller('meuCtrlInicial', function($scope, $http) {
+
+            $scope.NGM_txPopUpConfirmacao = "";
+            $scope.indiceFoto = 0;
+
+            $scope.nome = "";
+            $scope.telefone = "";
+            $scope.email = "";
+            $scope.nomePet = "";
+            $scope.idadePet = "";
+            $scope.racaPet = "";
+            $scope.portePet = "";
+
+
+            $scope.NGC_btSalvar = function(){
+                $scope.nome = $scope.NGM_tbNomeTutor;
+                $scope.telefone = $scope.NGM_tbTelefone;
+                $scope.email = $scope.NGM_tbEmailTutor;
+                $scope.nomePet = $scope.NGM_tbNomePet;
+                $scope.idadePet = $scope.NGM_tbIdadePet;
+                $scope.racaPet = $scope.NGM_tbRacaPet;
+                $scope.portePet = $scope.NGM_tbPortePet;
+
+
+
+
+
+                $scope.NGM_txPopUpConfirmacao = "Dados salvos com sucesso!";
+                document.getElementById('popUpConfirmacao').style.left = "75%";
+                document.getElementById('popUpConfirmacao').style.opacity = "100%";
+                document.getElementById('popUpConfirmacao').style.visibility = "visible";
+                setTimeout(function(){
+                    document.getElementById('popUpConfirmacao').style.left = "80%";
+                    document.getElementById('popUpConfirmacao').style.opacity = "0%";
+                    setTimeout(function(){
+                        document.getElementById('popUpConfirmacao').style.visibility = "hidden";
+                    },500);
+                },2000);
+
+            }
+
+            $scope.NGC_btEnviar = function(){
+                if( 1 == 1 ){
+                    $scope.NGM_tbDestinatario = "";
+                    $scope.NGM_tbAssunto = "";
+                    $scope.NGM_taMensagem = "";
+
+
+
+
+
+
+                    $scope.NGM_txPopUpConfirmacao = "E-mail enviado com sucesso!";
+                    document.getElementById('popUpConfirmacao').style.left = "75%";
+                    document.getElementById('popUpConfirmacao').style.opacity = "100%";
+                    document.getElementById('popUpConfirmacao').style.visibility = "visible";
+                    setTimeout(function(){
+                        document.getElementById('popUpConfirmacao').style.left = "80%";
+                        document.getElementById('popUpConfirmacao').style.opacity = "0%";
+                        setTimeout(function(){
+                            document.getElementById('popUpConfirmacao').style.visibility = "hidden";
+                        },500);
+                    },2000);
+
+                }else{
+
+                    $scope.NGM_txPopUpConfirmacao = "Falha no envio do E-mail!";
+                    document.getElementById('popUpConfirmacao').style.left = "75%";
+                    document.getElementById('popUpConfirmacao').style.opacity = "100%";
+                    document.getElementById('popUpConfirmacao').style.visibility = "visible";
+                    setTimeout(function(){
+                        document.getElementById('popUpConfirmacao').style.left = "80%";
+                        document.getElementById('popUpConfirmacao').style.opacity = "0%";
+                        setTimeout(function(){
+                            document.getElementById('popUpConfirmacao').style.visibility = "hidden";
+                        },500);
+                    },2000);
+                }
+            }
+
+
+
+
+
+
+
+
+            $scope.NGC_btInicio = function(){
+                window.sessionStorage.setItem('nomeTutor', $scope.nome);
+                window.sessionStorage.setItem('telefone', $scope.telefone);
+                window.sessionStorage.setItem('email', $scope.email);
+                window.sessionStorage.setItem('nomePet', $scope.nomePet);
+                window.sessionStorage.setItem('idadePet', $scope.idadePet);
+                window.sessionStorage.setItem('racaPet', $scope.racaPet);
+                window.sessionStorage.setItem('portePet', $scope.portePet);
+
+                window.location.href = "./Inicio.html";
+            }
+
+            $scope.NGC_btFotos = function(){
+                window.sessionStorage.setItem('nomeTutor', $scope.nome);
+                window.sessionStorage.setItem('telefone', $scope.telefone);
+                window.sessionStorage.setItem('email', $scope.email);
+                window.sessionStorage.setItem('nomePet', $scope.nomePet);
+                window.sessionStorage.setItem('idadePet', $scope.idadePet);
+                window.sessionStorage.setItem('racaPet', $scope.racaPet);
+                window.sessionStorage.setItem('portePet', $scope.portePet);
+
+                window.location.href = "./Fotos.html";
+            }
+            $scope.NGC_btSobre = function(){
+                window.sessionStorage.setItem('nomeTutor', $scope.nome);
+                window.sessionStorage.setItem('telefone', $scope.telefone);
+                window.sessionStorage.setItem('email', $scope.email);
+                window.sessionStorage.setItem('nomePet', $scope.nomePet);
+                window.sessionStorage.setItem('idadePet', $scope.idadePet);
+                window.sessionStorage.setItem('racaPet', $scope.racaPet);
+                window.sessionStorage.setItem('portePet', $scope.portePet);
+
+                window.location.href = "./Sobre.html";
+            }
+            $scope.NGC_btServicos = function(){
+                window.sessionStorage.setItem('nomeTutor', $scope.nome);
+                window.sessionStorage.setItem('telefone', $scope.telefone);
+                window.sessionStorage.setItem('email', $scope.email);
+                window.sessionStorage.setItem('nomePet', $scope.nomePet);
+                window.sessionStorage.setItem('idadePet', $scope.idadePet);
+                window.sessionStorage.setItem('racaPet', $scope.racaPet);
+                window.sessionStorage.setItem('portePet', $scope.portePet);
+
+                window.location.href = "./Servicos.html";
+            }
+            $scope.NGC_btAgendamento = function(){
+                window.sessionStorage.setItem('nomeTutor', $scope.nome);
+                window.sessionStorage.setItem('telefone', $scope.telefone);
+                window.sessionStorage.setItem('email', $scope.email);
+                window.sessionStorage.setItem('nomePet', $scope.nomePet);
+                window.sessionStorage.setItem('idadePet', $scope.idadePet);
+                window.sessionStorage.setItem('racaPet', $scope.racaPet);
+                window.sessionStorage.setItem('portePet', $scope.portePet);
+
+                window.location.href = "./Agendamento.html";
+            }
+
+            $scope.NGC_btEsquerdo = function(){
+                $scope.indiceFoto--;
+
+                if($scope.indiceFoto == -1){
+                    $scope.indiceFoto = 7;
+                }
+                
+                if($scope.indiceFoto == 0){
+                    document.getElementById('imgInicial').src = '../img/PlanoFundo5.jpg';
+                }else if($scope.indiceFoto == 1){
+                    document.getElementById('imgInicial').src = '../img/imgCachorro1.jpg';
+
+                }else if($scope.indiceFoto == 2){
+                    document.getElementById('imgInicial').src = '../img/imgCachorro2.jpg';
+
+                }else if($scope.indiceFoto == 3){
+                    document.getElementById('imgInicial').src = '../img/imgCachorro3.jpg';
+
+                }else if($scope.indiceFoto == 4){
+                    document.getElementById('imgInicial').src = '../img/imgCachorro4.jpg';
+
+                }else if($scope.indiceFoto == 5){
+                    document.getElementById('imgInicial').src = '../img/imgGato1.jpg';
+
+                }else if($scope.indiceFoto == 6){
+                    document.getElementById('imgInicial').src = '../img/imgGato1.jpg';
+
+                }else if($scope.indiceFoto == 7){
+                    document.getElementById('imgInicial').src = '../img/imgGato1.jpg';
+
+                }
+            }
+            $scope.NGC_btDireito = function(){
+                $scope.indiceFoto+=1;
+
+                if($scope.indiceFoto == 8){
+                    $scope.indiceFoto = 0;
+                }
+
+                if($scope.indiceFoto == 0){
+                    document.getElementById('imgInicial').src = '../img/PlanoFundo5.jpg';
+                }else if($scope.indiceFoto == 1){
+                    document.getElementById('imgInicial').src = '../img/imgCachorro1.jpg';
+
+                }else if($scope.indiceFoto == 2){
+                    document.getElementById('imgInicial').src = '../img/imgCachorro2.jpg';
+
+                }else if($scope.indiceFoto == 3){
+                    document.getElementById('imgInicial').src = '../img/imgCachorro3.jpg';
+
+                }else if($scope.indiceFoto == 4){
+                    document.getElementById('imgInicial').src = '../img/imgCachorro4.jpg';
+
+                }else if($scope.indiceFoto == 5){
+                    document.getElementById('imgInicial').src = '../img/imgGato1.jpg';
+
+                }else if($scope.indiceFoto == 6){
+                    document.getElementById('imgInicial').src = '../img/imgGato2.jpg';
+
+                }else if($scope.indiceFoto == 7){
+                    document.getElementById('imgInicial').src = '../img/imgGato3.jpg';
+
+                }
+
+            }
+
+
+            $scope.NGC_btDivDoisFotos = function(){
+                document.getElementById('divDoisFotos').style.top = '0%';
+            }
+            $scope.NGC_btVoltar = function(){
+                document.getElementById('divDoisFotos').style.top = '100%';
+            }
+            $scope.NGC_btVoltarPopUp = function(){
+                document.getElementById('popUpFoto').style.visibility = 'hidden';
+            }
+
+            $scope.NGC_btImgPopUp = function(dir){       
+                document.getElementById('popUpFoto').style.visibility = 'visible';
+                document.getElementById('divInterna').src = dir;
+            }
+
+        });
+    </script>
+
+</head>
+<body data-ng-app="PetShopServico" data-ng-controller="meuCtrlInicial">
+<div class="divInicial" id="divInicial"><img class="imgInicial" id="imgInicial" src="../img/PlanoFundo5.jpg"></img>
+
+    <div class="popUpConfirmacao" id="popUpConfirmacao">
+        <p class="txPopUpConfirmacao" id="txPopUpConfirmacao" data-ng-model="NGM_txPopUpConfirmacao">{{NGM_txPopUpConfirmacao}}</p>
+    </div>
+
+    <img class="btPerfil" id="btPerfil" src="../img/logoPerfil.jpg"></img>
+    <div class="divPopUpPerfil" id="divPopUpPerfil">
+        <p class="txNomeTutor" id="txNomeTutor">Nome do Tutor</p>
+        <input type="textbox" class="tbNomeTutor" id="tbNomeTutor" data-ng-model="NGM_tbNomeTutor">
+        <p class="txEmailTutor" id="txEmailTutor">E-mail</p>
+        <input type="textbox" class="tbEmailTutor" id="tbEmailTutor" data-ng-model="NGM_tbEmailTutor">
+        <p class="txTelefone" id="txTelefone">Telefone</p>
+        <input type="textbox" class="tbTelefone" id="tbTelefone" data-ng-model="NGM_tbTelefone">
+        <div class="divSeparacaoPopUpPerfil" id="divSeparacaoPopUpPerfil"></div>
+        <p class="txNomePet" id="txNomePet">Nome do Pet</p>
+        <input type="textbox" class="tbNomePet" id="tbNomePet" data-ng-model="NGM_tbNomePet">
+        <p class="txRacaPet" id="txRacaPet">Raça do Pet</p>
+        <input type="textbox" class="tbRacaPet" id="tbRacaPet" data-ng-model="NGM_tbRacaPet">
+        <p class="txIdadePet" id="txIdadePet">Idade do Pet</p>
+        <input type="textbox" class="tbIdadePet" id="tbIdadePet" data-ng-model="NGM_tbIdadePet">
+        <p class="txPortePet" id="txPortePet">Porte do Pet</p>
+        <input type="textbox" class="tbPortePet" id="tbPortePet" data-ng-model="NGM_tbPortePet">
+        <div class="btSalvar" id="btSalvar" data-ng-click="NGC_btSalvar()"><p class="txBtSalvar" id="txBtSalvar">Salvar</p></div>
+        <img class="imgPatinha1" id="imgPatinha1" src="../img/logoPataCachorro.jpg"></img>
+        <img class="imgPatinha2" id="imgPatinha2" src="../img/logoPataCachorro.jpg"></img>
+    </div>
+    <a href="https://www.instagram.com/brasilpetshop/#:~:text=Brasil%20Pet%20Shop%20(%40brasilpetshop)%20%E2%80%A2%20Instagram%20photos%20and%20videos"><img class="btInstagram" id="btInstagram" src="../img/logoInstagram.jpg"></img></a>
+    <a href="https://wa.me/5511983093902?text=Olá!%20Eu%20gostaria%20de%20agendar%20um%20serviço!"><img class="btWhatsapp" id="btWhatsapp" src="../img/logoWhatsapp.png"></img></a>
+    <img class="btEmail" id="btEmail" src="../img/logoEmail.png"></img>
+    <div class="divPopUpEmail" id="divPopUpEmail">
+        <p class="txDestinatario" id="txDestinatario">Destinatário</p>
+        <input type="textbox" class="tbDestinatario" id="tbDestinatario" data-ng-model="NGM_tbDestinatario">
+        <p class="txRemetente" id="txRemetente">Remetente</p>
+        <input type="textbox" class="tbRemetente" id="tbRemetente" value="devnovais@gmail.com" readonly>
+        <p class="txAssunto" id="txAssunto">Assunto</p>
+        <input type="textbox" class="tbAssunto" id="tbAssunto" data-ng-model="NGM_tbAssunto">
+        <p class="txMensagem" id="txMensagem">Mensagem</p>
+        <textarea class="taMensagem" id="taMensagem" data-ng-model="NGM_taMensagem"></textarea>
+        <div class="btEnviar" id="btEnviar" data-ng-click="NGC_btEnviar()"><p class="txEnviar" id="txEnviar">Enviar</p></div>
+        <img class="imgPatinha3" id="imgPatinha3" src="../img/logoPataCachorro.jpg"></img>
+        <img class="imgPatinha4" id="imgPatinha4" src="../img/logoPataCachorro.jpg"></img>
+    </div>
+
+
+    <div class="divBtEsquerdo" id="divBtEsquerdo" data-ng-click="NGC_btEsquerdo()"></div>
+    <div class="divBtDireito" id="divBtDireito" data-ng-click="NGC_btDireito()"></div>
+
+
+    <p class="txLogoUm" id="txLogoUm" data-ng-click="NGC_btInicio()">PetShop</p>
+    <p class="txLogoDois" id="txLogoDois" data-ng-click="NGC_btInicio()">Seu pet sempre feliz!</p>
+    <img class="imgLogo" id="imgLogo" src="../img/logoPataCachorro.jpg" data-ng-click="NGC_btInicio()"></img>
+
+    <img class="btFotos" id="btFotos" src="../img/logoContatos.jpg" data-ng-click="NGC_btFotos()"></img>
+    <img class="btSobre" id="btSobre" src="../img/logoSobre.jpg" data-ng-click="NGC_btSobre()"></img>
+    <img class="btServicos" id="btServicos" src="../img/logoServicos.jpg" data-ng-click="NGC_btServicos()"></img>
+    <img class="btAgendamento" id="btAgendamento" src="../img/logoCl.jpg" data-ng-click="NGC_btAgendamento()"></img>
+
+
+    <div class="divDoisFotos" id="divDoisFotos">
+        <div class="btDivDoisFotos" id="btDivDoisFotos" data-ng-click="NGC_btDivDoisFotos()"></div>
+        <div class="divSuperiorFotos" id="divSuperiorFotos"></div>
+        <img class="btFotoUm" id="btFotoUm" src="../img/PlanoFundo5.jpg" data-ng-click="NGC_btImgPopUp('../img/PlanoFundo5.jpg')"></img>
+        <img class="btFotoDois" id="btFotoDois" src="../img/imgCachorro1.jpg" data-ng-click="NGC_btImgPopUp('../img/imgCachorro1.jpg')"></img>
+        <img class="btFotoTres" id="btFotoTres" src="../img/imgCachorro2.jpg" data-ng-click="NGC_btImgPopUp('../img/imgCachorro2.jpg')"></img>
+        <img class="btFotoQuatro" id="btFotoQuatro" src="../img/imgCachorro3.jpg" data-ng-click="NGC_btImgPopUp('../img/imgCachorro3.jpg')"></img>
+        <img class="btFotoCinco" id="btFotoCinco" src="../img/imgCachorro4.jpg" data-ng-click="NGC_btImgPopUp('../img/imgCachorro4.jpg')"></img>
+        <img class="btFotoSeis" id="btFotoSeis" src="../img/imgGato1.jpg" data-ng-click="NGC_btImgPopUp('../img/imgGato1.jpg')"></img>
+        <img class="btFotoSete" id="btFotoSete" src="../img/imgGato2.jpg" data-ng-click="NGC_btImgPopUp('../img/imgGato2.jpg')"></img>
+        <img class="btFotoOito" id="btFotoOito" src="../img/imgGato3.jpg" data-ng-click="NGC_btImgPopUp('../img/imgGato3.jpg')"></img>
+        <img class="btFotoNove" id="btFotoNove" src="../img/PlanoFundo4.jpg" data-ng-click="NGC_btImgPopUp('../img/PlanoFundo4.jpg')"></img>
+        <div class="rollDivMeio" id="rollDivMeio"><div class="btRollDivMeio" id="btRollDivMeio"></div></div>
+        <div class="btVoltar" id="btVoltar" data-ng-click="NGC_btVoltar()"><p class="txBtVoltar" id="txBtVoltar">Voltar</p></div>
+
+        <div class="popUpFoto" id="popUpFoto">
+            <div class="divTituloMeioTela" id="divTituloMeioTela"><p class="txTitulo" id="txTitulo">Nome da Imagem</p></div>
+            <img class="divInterna" id="divInterna" src="../img/PlanoFundo4.jpg"></img>
+            <b class="txData" id="txData">Data:</b><p class="txDataData" id="txDataData">22/02/2022</p>
+            <div class="btVoltarPopUp" id="btVoltarPopUp" data-ng-click="NGC_btVoltarPopUp()"><p class="txBtVoltarPopUp" id="txBtVoltarPopUp">Voltar</p></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

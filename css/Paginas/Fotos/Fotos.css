@@ -1,0 +1,394 @@
+.divInicial{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.imgInicial{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+.txLogoUm{
+    position: fixed;
+    left: 5%;
+    top: -10%;
+    font-family: Oranienbaum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 148px;
+    color: #FFFFFF;
+    text-shadow: -15px 20px 20px rgba(41, 38, 38, 0.38);
+    z-index: 10;
+}
+.txLogoDois{
+    position: fixed;
+    left: 5%;
+    top: 2%;
+    font-family: Oranienbaum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 67px;
+    color: #FFFFFF;
+    text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.29);
+    z-index: 10;
+}
+.imgLogo{
+    position: fixed;
+    top: 3.5%;
+    left: 12%;
+    width: 2%;
+    height: 4%;
+    border-radius: 10pc;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+    z-index: 10;
+}
+.btFotos{
+    position: fixed;
+    top: 5%;
+    left: 39.5%;
+    width: 3%;
+    height: 6%;
+    border-radius: 10pc;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+.btSobre{
+    position: fixed;
+    top: 5%;
+    left: 44.5%;
+    width: 3%;
+    height: 6%;
+    border-radius: 10pc;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+.btServicos{
+    position: fixed;
+    top: 5%;
+    left: 49.5%;
+    width: 3%;
+    height: 6%;
+    border-radius: 10pc;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+.btAgendamento{
+    position: fixed;
+    top: 5%;
+    left: 54%;
+    width: 3%;
+    height: 6%;
+    border-radius: 10pc;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+
+
+
+
+.divBtEsquerdo{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 5%;
+    background-color: rgba(62, 62, 62, 0.34);
+    border-top-right-radius: 15pc;
+    border-bottom-right-radius: 15pc;
+    cursor: pointer;
+}
+.divBtDireito{
+    position: fixed;
+    top: 0%;
+    left: 95%;
+    height: 100%;
+    width: 5%;
+    background-color: rgba(62, 62, 62, 0.34);
+    border-top-left-radius: 15pc;
+    border-bottom-left-radius: 15pc;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.divDoisFotos{
+    position: fixed;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.925);
+    transition-duration: 1s;
+    z-index: 5;
+}
+.btDivDoisFotos{
+    position: relative;
+    top: -8%;
+    left: 47.5%;
+    width: 5%;
+    height: 8%;
+    background-color: white;
+    border-radius: 50%;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    text-shadow: -15px 20px 20px rgba(41, 38, 38, 0.38);
+    cursor: pointer;
+}
+
+.divSuperiorFotos{
+    position: relative;
+    top: -8%;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0104) 0%, rgba(0, 0, 0, 0.13) 50.54%, rgba(0, 0, 0, 0.13) 100%);
+    transform: rotate(180deg);
+}
+
+.btFotoUm{
+    position: relative;
+    top: -5%;
+    left: 30%;
+    width: 10%;
+    height: 18%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(41, 38, 38, 0.466);
+    cursor: pointer;
+}
+.btFotoDois{
+    position: relative;
+    top: -5%;
+    left: 32%;
+    width: 10%;
+    height: 18%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(41, 38, 38, 0.466);
+    cursor: pointer;
+}
+.btFotoTres{
+    position: relative;
+    top: -5%;
+    left: 33.8%;
+    width: 10%;
+    height: 18%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(41, 38, 38, 0.466);
+    cursor: pointer;
+}
+
+.btFotoQuatro{
+    position: relative;
+    top: 17%;
+    left: -1%;
+    width: 10%;
+    height: 18%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(41, 38, 38, 0.466);
+    cursor: pointer;
+}
+.btFotoCinco{
+    position: relative;
+    top: 17%;
+    left: 1%;
+    width: 10%;
+    height: 18%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(41, 38, 38, 0.466);
+    cursor: pointer;
+}
+.btFotoSeis{
+    position: relative;
+    top: 17%;
+    left: 3%;
+    width: 10%;
+    height: 18%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(41, 38, 38, 0.466);
+    cursor: pointer;
+}
+.btFotoSete{
+    position: relative;
+    top: 39%;
+    left: -31.8%;
+    width: 10%;
+    height: 18%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(41, 38, 38, 0.466);
+    cursor: pointer;
+}
+.btFotoOito{
+    position: relative;
+    top: 39%;
+    left: -30%;
+    width: 10%;
+    height: 18%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(41, 38, 38, 0.466);
+    cursor: pointer;
+}
+.btFotoNove{
+    position: relative;
+    top: 39%;
+    left: -28%;
+    width: 10%;
+    height: 18%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(41, 38, 38, 0.466);
+    cursor: pointer;
+}
+
+.rollDivMeio{
+    position: relative;
+    top: -22%;
+    left: 70%;
+    height: 60%;
+    width: 0.2%;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 5;
+}
+.btRollDivMeio{
+    position: relative;
+    top: 5%;
+    left: -100%;
+    height: 10%;
+    width: 300%;
+    border-radius: 5px;
+    background-color: rgba(90, 90, 90, 0.33);
+    z-index: 5;
+}
+.btRollDivMeio:hover{
+    background-color: rgba(46, 46, 46, 0.33);
+    z-index: 5;
+}
+
+
+.btVoltar{
+    position: relative;
+    height: 7%;
+    width: 10%;
+    top: -15%;
+    left: 45%;
+    border-radius: 25px;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    background-color: rgba(223, 56, 56, 0.81);
+    cursor: pointer;
+    z-index: 5;
+}
+.txBtVoltar{
+    position: relative;
+    left: 34%;
+    top: 30%;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+
+
+.popUpFoto{
+    position: fixed;
+    top: 20%;
+    left: 32%;
+    width: 40%;
+    height: 70%;
+    background-color: white;
+    border-radius: 40px;
+    visibility: hidden;
+    box-shadow: 5px 5px 5px rgba(41, 38, 38, 0.466);
+    z-index: 6;
+}
+
+.divTituloMeioTela{
+    position: relative;
+    left: 0%;
+    top: -5.5%;
+    width: 100%;
+    height: 15%;
+    background-color: rgba(223, 56, 56, 0.81);
+    border-radius: 30px;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+.txTitulo{
+    position: relative;
+    left: 34%;
+    top: 35%;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: #FFFFFF;
+
+}
+
+.divInterna{
+    position: relative;
+    width: 88%;
+    height: 55%;
+    left: 5%;
+    top: -2%;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.04);
+    border-radius: 5px;
+}
+
+.txData{
+    position: relative;
+    left: -84%;
+    top: 3%;
+}
+.txDataData{
+    position: relative;
+    left: 15%;
+    font-size: 13px;
+    top: -3.2%;
+}
+
+
+.btVoltarPopUp{
+    position: relative;
+    height: 8%;
+    width: 25%;
+    top: 5.5%;
+    left: 37%;
+    border-radius: 25px;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    background-color: rgba(223, 56, 56, 0.81);
+    cursor: pointer;
+    z-index: 5;
+}
+.txBtVoltarPopUp{
+    position: relative;
+    left: 35%;
+    top: 32%;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+}

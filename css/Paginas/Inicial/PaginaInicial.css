@@ -1,0 +1,208 @@
+.divInicial{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.imgInicial{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+.divBtEsquerdo{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 5%;
+    background-color: rgba(62, 62, 62, 0.34);
+    border-top-right-radius: 15pc;
+    border-bottom-right-radius: 15pc;
+}
+.divBtDireito{
+    position: fixed;
+    top: 0%;
+    left: 95%;
+    height: 100%;
+    width: 5%;
+    background-color: rgba(62, 62, 62, 0.34);
+    border-top-left-radius: 15pc;
+    border-bottom-left-radius: 15pc;
+}
+
+
+.divBolinha1{
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    height: 5%;
+    width: 2.5%;
+    background-color: white;
+    border-radius: 15pc;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.divBolinha2{
+    position: fixed;
+    top: 11%;
+    left: 46.8%;
+    height: 3%;
+    width: 1.5%;
+    background-color: black;
+    border-radius: 15pc;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.divBolinha3{
+    position: fixed;
+    top: 11%;
+    left: 54%;
+    height: 3%;
+    width: 1.5%;
+    background-color: black;
+    border-radius: 15pc;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.txLogoUm{
+    position: fixed;
+    left: 20%;
+    top: 28%;
+    font-family: Oranienbaum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 128px;
+    line-height: 148px;
+    color: #FFFFFF;
+    text-shadow: -15px 20px 20px rgba(41, 38, 38, 0.38);
+}
+.txLogoDois{
+    position: fixed;
+    left: 20%;
+    top: 50%;
+    font-family: Oranienbaum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 58px;
+    line-height: 67px;
+    color: #FFFFFF;
+    text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.29);
+}
+.imgLogo{
+    position: fixed;
+    top: 45%;
+    left: 44%;
+    width: 5%;
+    height: 10%;
+    border-radius: 10pc;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+
+.divCimaBotoes{
+    position: fixed;
+    width: 40%;
+    height: 0.1%;
+    top: 78%;
+    left: 30%;
+    background-color: white;
+}
+.btFotos{
+    position: fixed;
+    top: 82%;
+    left: 35%;
+    width: 5%;
+    height: 10%;
+    border-radius: 10pc;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+.btSobre{
+    position: fixed;
+    top: 82%;
+    left: 43%;
+    width: 5%;
+    height: 10%;
+    border-radius: 10pc;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+.btServicos{
+    position: fixed;
+    top: 82%;
+    left: 51%;
+    width: 5%;
+    height: 10%;
+    border-radius: 10pc;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+.btAgendamento{
+    position: fixed;
+    top: 82%;
+    left: 59%;
+    width: 5%;
+    height: 10%;
+    border-radius: 10pc;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+
+
+
+.txFotos{
+    position: fixed;
+    left: 36%;
+    top: 91%;
+    font-family: Oranienbaum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-shadow: -15px 20px 20px rgba(41, 38, 38, 0.38);
+}
+
+.txSobre{
+    position: fixed;
+    left: 43.9%;
+    top: 91%;
+    font-family: Oranienbaum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-shadow: -15px 20px 20px rgba(41, 38, 38, 0.38);
+}
+
+.txServicos{
+    position: fixed;
+    left: 51.3%;
+    top: 91%;
+    font-family: Oranienbaum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-shadow: -15px 20px 20px rgba(41, 38, 38, 0.38);
+}
+
+.txAgendamento{
+    position: fixed;
+    left: 58%;
+    top: 91%;
+    font-family: Oranienbaum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-shadow: -15px 20px 20px rgba(41, 38, 38, 0.38);
+}

@@ -1,0 +1,382 @@
+.btPerfil{
+    position: fixed;
+    top: 2%;
+    left: 93%;
+    width: 4%;
+    height: 8%;
+    border-radius: 10pc;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+    z-index: 10;
+}
+.btPerfil:hover ~ .divPopUpPerfil{
+    visibility: visible;
+}
+
+
+
+.divPopUpPerfil{
+    position: fixed;
+    top: 10%;
+    left: 73%;
+    height: 45%;
+    width: 20%;
+    background-color: white;
+    border-radius: 10%;
+    border-top-right-radius: 1%;
+    visibility: hidden;
+    transition-duration: 1s;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.divPopUpPerfil:hover{
+    visibility: visible;
+}
+.divPopUpPerfil:focus{
+    visibility: visible;
+}
+.txNomeTutor{
+    position: relative;
+    font-family: Oranienbaum;
+    font-size: 16px;
+    top: 5%;
+    left: 7%;
+}
+.tbNomeTutor{
+    position: relative;
+    font-family: Oranienbaum;
+    font-size: 20px;
+    top: 3%;
+    width: 40%;
+    left: 6.5%;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: rgb(248, 248, 248);
+}
+.txEmailTutor{
+    position: relative;
+    font-family: Oranienbaum;
+    font-size: 16px;
+    top: 5%;
+    left: 7%;
+}
+.tbEmailTutor{
+    position: relative;
+    font-family: Oranienbaum;
+    font-size: 20px;
+    top: 3%;
+    width: 60%;
+    left: 6.5%;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: rgb(248, 248, 248);
+}
+.txTelefone{
+    position: relative;
+    font-family: Oranienbaum;
+    font-size: 16px;
+    top: -32%;
+    left: 52%;
+}
+.tbTelefone{
+    position: relative;
+    font-family: Oranienbaum;
+    font-size: 20px;
+    top: -33.6%;
+    width: 40%;
+    left: 52%;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: rgb(248, 248, 248);
+}
+.divSeparacaoPopUpPerfil{
+    position: relative;
+    left: 10%;
+    top: -8%;
+    width: 80%;
+    height: 1%;
+    border-radius: 10px;
+    background-color: rgb(248, 248, 248);
+}
+.txNomePet{
+    position: relative;
+    font-family: Oranienbaum;
+    font-size: 16px;
+    left: 7%;
+    top: -5%;
+}
+.tbNomePet{
+    position: relative;
+    font-family: Oranienbaum;
+    font-size: 20px;
+    width: 40%;
+    left: 6.5%;
+    top: -7%;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: rgb(248, 248, 248);
+}
+.txRacaPet{
+    position: relative;
+    font-family: Oranienbaum;
+    font-size: 16px;
+    left: 7%;
+    top: -5%;
+}
+.tbRacaPet{
+    position: relative;
+    font-family: Oranienbaum;
+    font-size: 20px;
+    width: 40%;
+    left: 6.5%;
+    top: -7%;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: rgb(248, 248, 248);
+}
+
+.txIdadePet{
+    position: relative;
+    font-family: Oranienbaum;
+    font-size: 16px;
+    left: 52%;
+    top: -42%;
+}
+.tbIdadePet{
+    position: relative;
+    font-family: Oranienbaum;
+    font-size: 20px;
+    width: 30%;
+    left: 52%;
+    top: -44%;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: rgb(248, 248, 248);
+}
+
+.txPortePet{
+    position: relative;
+    font-family: Oranienbaum;
+    font-size: 16px;
+    left: 52%;
+    top: -42%;
+}
+.tbPortePet{
+    position: relative;
+    font-family: Oranienbaum;
+    font-size: 20px;
+    width: 40%;
+    left: 52%;
+    top: -44%;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: rgb(248, 248, 248);
+}
+.btSalvar{
+    position: relative;
+    top: -42.8%;
+    left: 37%;
+    width: 30%;
+    height: 8%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    background-color: rgba(123, 255, 144, 0.69);;
+    cursor: pointer;
+}
+.txBtSalvar{
+    position: relative;
+    top: 10%;
+    left: 20%;
+    color: white;
+    font-size: 24px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.imgPatinha1{
+    position: relative;
+    top: -120%;
+    width: 12%;
+    left: 80%;
+    transform: rotate(-30deg);
+    z-index: 2;
+
+}
+.imgPatinha2{
+    position: relative;
+    top: -110%;
+    width: 12%;
+    left: 62%;
+    transform: rotate(-30deg);
+}
+
+
+
+
+
+.btInstagram{
+    position: fixed;
+    top: 65.5%;
+    left: 93%;
+    width: 3.5%;
+    height: 7.3%;
+    border-radius: 10pc;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+    z-index: 10;
+}
+.btWhatsapp{
+    position: fixed;
+    top: 75%;
+    left: 92.7%;
+    width: 4%;
+    height: 8%;
+    border-radius: 10pc;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+    z-index: 10;
+}
+.btEmail{
+    position: fixed;
+    top: 85%;
+    left: 93%;
+    width: 3.5%;
+    height: 7%;
+    border-radius: 10pc;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+    z-index: 10;
+}
+.btEmail:hover ~ .divPopUpEmail{
+    visibility: visible;
+}
+
+.divPopUpEmail{
+    position: fixed;
+    top: 46%;
+    left: 62%;
+    height: 40%;
+    width: 30%;
+    background-color: white;
+    border-radius: 2pc;
+    border-bottom-right-radius: 1%;
+    visibility: visible;
+    transition-duration: 1s;
+    z-index: 10;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    visibility: hidden;
+}
+.divPopUpEmail:hover{
+    visibility: visible;
+}
+
+.txDestinatario{
+    position: relative;
+    font-family: Oranienbaum;
+    font-size: 16px;
+    left: 5%;
+    top: 2%;
+}
+.tbDestinatario{
+    position: relative;
+    font-family: Oranienbaum;
+    font-size: 20px;
+    width: 40%;
+    left: 4.5%;
+    top: 0%;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: rgb(248, 248, 248);
+}
+
+.txRemetente{
+    position: relative;
+    font-family: Oranienbaum;
+    font-size: 16px;
+    left: 52.5%;
+    top: -18.5%;
+}
+.tbRemetente{
+    position: relative;
+    font-family: Oranienbaum;
+    font-size: 20px;
+    width: 40%;
+    left: 52%;
+    top: -21%;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: rgb(248, 248, 248);
+}
+.txAssunto{
+    position: relative;
+    font-family: Oranienbaum;
+    font-size: 16px;
+    left: 5%;
+    top: -20%;
+}
+.tbAssunto{
+    position: relative;
+    font-family: Oranienbaum;
+    font-size: 20px;
+    width: 60%;
+    left: 4.5%;
+    top: -22%;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: rgb(248, 248, 248);
+}
+.txMensagem{
+    position: relative;
+    font-family: Oranienbaum;
+    font-size: 16px;
+    left: 5%;
+    top: -20%;
+}
+.taMensagem{
+    position: relative;
+    font-family: Oranienbaum;
+    font-size: 20px;
+    width: 88%;
+    height: 35%;
+    left: 4.5%;
+    top: -22%;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: rgb(248, 248, 248);
+    z-index: 11;
+}
+.btEnviar{
+    position: fixed;
+    top: 92%;
+    left: 37%;
+    width: 30%;
+    height: 8%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    background-color: rgba(123, 255, 144, 0.69);;
+    cursor: pointer;
+    z-index: 10;
+}
+.txEnviar{
+    position: relative;
+    top: -70%;
+    left: 32%;
+    color: white;
+    font-size: 24px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    z-index: 10;
+}
+
+.imgPatinha3{
+    position: fixed;
+    top: 23%;
+    width: 10%;
+    left: 80%;
+    transform: rotate(-30deg);
+    z-index: 2;
+
+}
+.imgPatinha4{
+    position: fixed;
+    top: 35%;
+    width: 10%;
+    left: 75%;
+    transform: rotate(-30deg);
+}
